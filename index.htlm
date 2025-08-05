@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProKick Jerseys - Football Shirts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>ProKick Jerseys</h1>
+    <input type="text" id="searchInput" placeholder="Axtar: Messi, Ronaldo..." />
+  </header>
+
+  <main>
+    <div class="container" id="shirtContainer">
+
+      <!-- Burada futbolçu formaları yerləşəcək -->
+
+      <!-- Nümunə 3 futbolçu: -->
+
+      <div class="shirt" data-name="Lionel Messi" data-team="Argentina">
+        <img src="images/lionel_messi.jpg" alt="Lionel Messi forması" />
+        <h3>Lionel Messi</h3>
+        <p>Argentina</p>
+        <p class="price">$10</p>
+        <button onclick="addToCart('Lionel Messi', 10)">Səbətə əlavə et</button>
+      </div>
+
+      <div class="shirt" data-name="Cristiano Ronaldo" data-team="Portugal">
+        <img src="images/cristiano_ronaldo.jpg" alt="Cristiano Ronaldo forması" />
+        <h3>Cristiano Ronaldo</h3>
+        <p>Portugal</p>
+        <p class="price">$10</p>
+        <button onclick="addToCart('Cristiano Ronaldo', 10)">Səbətə əlavə et</button>
+      </div>
+
+      <div class="shirt" data-name="Neymar Jr" data-team="Brazil">
+        <img src="images/neymar_jr.jpg" alt="Neymar Jr forması" />
+        <h3>Neymar Jr</h3>
+        <p>Brazil</p>
+        <p class="price">$10</p>
+        <button onclick="addToCart('Neymar Jr', 10)">Səbətə əlavə et</button>
+      </div>
+
+      <!-- Buraya 200 futbolçu əlavə ediləcək -->
+
+    </div>
+  </main>
+
+  <!-- Səbət və sifariş -->
+  <aside id="cart">
+    <h2>Səbət</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalPrice">Cəmi: $0</p>
+
+    <form id="orderForm">
+      <input type="text" placeholder="Adınız" required />
+      <input type="text" placeholder="Ünvanınız" required />
+      <input type="tel" placeholder="Telefon nömrəsi" required />
+      <button type="submit">Sifarişi tamamla</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
