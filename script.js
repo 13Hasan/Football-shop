@@ -1,4 +1,3 @@
-// Axtarış funksiyası
 document.getElementById("searchInput").addEventListener("input", function () {
   const value = this.value.toLowerCase();
   document.querySelectorAll(".shirt").forEach((shirt) => {
@@ -8,7 +7,6 @@ document.getElementById("searchInput").addEventListener("input", function () {
   });
 });
 
-// Səbət funksiyaları
 let cart = [];
 function addToCart(name, price) {
   cart.push({ name, price });
@@ -25,13 +23,12 @@ function updateCart() {
     li.textContent = `${item.name} - $${item.price}`;
     cartItems.appendChild(li);
   });
-  totalPrice.textContent = `Cəmi: $${total}`;
+  totalPrice.textContent = `Total: $${total}`;
 }
 
-// Sifariş formunun işləməsi
 document.getElementById("orderForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  alert("Sifarişiniz qəbul edildi! Təşəkkürlər.");
+  alert("Order received! Thank you.");
   cart = [];
   updateCart();
   this.reset();
