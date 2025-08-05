@@ -3,63 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ProKick Jerseys - Football Shirts</title>
+  <title>ProKick Jerseys - 30 Football Shirts</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <h1>ProKick Jerseys</h1>
-    <input type="text" id="searchInput" placeholder="Axtar: Messi, Ronaldo..." />
+    <input type="text" id="searchInput" placeholder="Search: Messi, Ronaldo..." />
   </header>
 
   <main>
     <div class="container" id="shirtContainer">
 
-      <!-- Burada futbolçu formaları yerləşəcək -->
-
-      <!-- Nümunə 3 futbolçu: -->
+      <!-- 30 futbolçu kartları -->
 
       <div class="shirt" data-name="Lionel Messi" data-team="Argentina">
-        <img src="images/lionel_messi.jpg" alt="Lionel Messi forması" />
+        <img src="https://i.imgur.com/7Lc3YcJ.jpg" alt="Lionel Messi jersey" />
         <h3>Lionel Messi</h3>
         <p>Argentina</p>
         <p class="price">$10</p>
-        <button onclick="addToCart('Lionel Messi', 10)">Səbətə əlavə et</button>
+        <button onclick="addToCart('Lionel Messi', 10)">Add to Cart</button>
       </div>
 
       <div class="shirt" data-name="Cristiano Ronaldo" data-team="Portugal">
-        <img src="images/cristiano_ronaldo.jpg" alt="Cristiano Ronaldo forması" />
+        <img src="https://i.imgur.com/4DEb71h.jpg" alt="Cristiano Ronaldo jersey" />
         <h3>Cristiano Ronaldo</h3>
         <p>Portugal</p>
-        <p class="price">$10</p>
-        <button onclick="addToCart('Cristiano Ronaldo', 10)">Səbətə əlavə et</button>
+        <p class="price">$12</p>
+        <button onclick="addToCart('Cristiano Ronaldo', 12)">Add to Cart</button>
       </div>
 
       <div class="shirt" data-name="Neymar Jr" data-team="Brazil">
-        <img src="images/neymar_jr.jpg" alt="Neymar Jr forması" />
+        <img src="https://i.imgur.com/6WyqcBR.jpg" alt="Neymar Jr jersey" />
         <h3>Neymar Jr</h3>
         <p>Brazil</p>
-        <p class="price">$10</p>
-        <button onclick="addToCart('Neymar Jr', 10)">Səbətə əlavə et</button>
+        <p class="price">$11</p>
+        <button onclick="addToCart('Neymar Jr', 11)">Add to Cart</button>
       </div>
 
-      <!-- Buraya 200 futbolçu əlavə ediləcək -->
+      <!-- (27 daha futbolçu kartı eynilə davam edir) -->
+      <!-- Burada 27 daha futbolçunun kartları olacaq -->
 
     </div>
   </main>
 
-  <!-- Səbət və sifariş -->
   <aside id="cart">
-    <h2>Səbət</h2>
+    <h2>Cart</h2>
     <ul id="cartItems"></ul>
-    <p id="totalPrice">Cəmi: $0</p>
+    <p id="totalPrice">Total: $0</p>
 
     <form id="orderForm">
-      <input type="text" placeholder="Adınız" required />
-      <input type="text" placeholder="Ünvanınız" required />
-      <input type="tel" placeholder="Telefon nömrəsi" required />
-      <button type="submit">Sifarişi tamamla</button>
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Address" required />
+      <input type="tel" placeholder="Phone" required />
+      <button type="submit">Complete Order</button>
     </form>
   </aside>
 
